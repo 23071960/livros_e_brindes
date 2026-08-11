@@ -1,0 +1,32 @@
+/* importa para o style.css, outros css, evitando muitos links no html*/
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrosel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodape.css");
+
+/*root ponto de partida do html, Espaço para declaração de variáveis globais a serem utilizada*/
+:root{
+    --cor-de-fundo:#EBECEE;
+    --branco: #FFFFFF;
+    --laranja:#EB9800;
+    --azul-degrade: linear-gradient(97.54deg,#002f52 35.40%, #326589 165.37%);
+    --preto:#000000;
+    --fonte-principal: poppins; 
+    --azul: #002F52;
+    --fonte-secundaria:"Josefin Sans";
+    --cinza:#474646;
+    --cinza-claro:#858585;
+
+}
+
+/* formata o corpo dapágia*/
+body{
+    background-color:  var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+

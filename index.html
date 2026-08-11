@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros e brindes</title>
+      <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? family=Josefin+Sans:ital,wght@0,400;1,700&family=Poppins:ital,wght@0,300;0,400;1,200;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="cabeçalho">
+        <h1>Pandora</h1>
+        <h2>livros e presentes</h2>
+    </header>
+    
+    <section class="livros">
+        <span class="titulo_livros"></span>
+        <h2 class="carrossel__titulo"> Mais vendidos</h2>
+   <!-- Slider main container -->
+<div class="carrossel__container">
+    <div class="swiper">
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="/imagens/livros/assim.jpg" alt="Livro de romance sobre recomeços "></div>
+        <div class="swiper-slide"><img src="/imagens/livros/estrelas.jpg"" alt="Lirvro sobre uma vida breilhante"></div>
+        <div class="swiper-slide"><img src="/imagens/livros/o_tempo.jpg" alt="Livro  sobre comoa vida pode demorar a valer a pena"></div>
+        <div class="swiper-slide"><img src="/imagens/livros/see_you.jpg" alt="Livro sobre como a vida muda a parti de quan nse é notado "></div>
+        <div class="swiper-slide"><img src="/imagens/livros/sombras.jpg" alt="Livro sobre a solidão da vida anonima"></div>
+        <div class="swiper-slide"><img src="/imagens/livros/sussuros.jpg" alt="Livro sobre intuição"></div>
+    </div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <!--<div class="swiper-scrollbar"></div>-->
+    </div>
+
+    </section>
+    <section class="brindes">
+        <span class="titulo_brindes"></span>
+        <div class="banner">
+
+        </div>
+    </section>
+    <footer class="rodape">
+        <span class="contato"></span>
+        <span class="endereco"></span>
+        <span class="autor"></span>
+    </footer>
+    <script src="main.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+     <script class="numero__slide">
+        const swiper = new Swiper(
+            ".swiper", {
+                 // speed: 400,
+                spaceBetween: 10,
+            slidesPerView: 3,
+                pagination:{
+                    el:".swiper-pagination",
+                    type:"bullets",
+                },
+            });
+     </script>   
+</body>
+</html>
